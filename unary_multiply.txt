@@ -1,0 +1,67 @@
+MACHINE FOR UNARY MULTIPLICATION
+
+//input symbols
+0 1
+
+//tape symbols - other than inputs
+Y
+
+//blank symbol
+B
+
+//number of states
+8
+
+//start state
+0
+
+//transitions
+//format:
+//number of states, and then for each state
+//read,write,shift,next state symbols
+//shift: R-right, L-left
+
+//q0
+2
+1 B R 1
+0 B R 6
+
+//q1
+2
+0 0 R 2
+1 1 R 1
+
+//q2
+2
+0 0 L 5
+1 Y R 3
+
+//q3
+3
+0 0 R 3
+1 1 R 3
+B 1 L 4
+
+//q4
+3
+0 0 L 4
+1 1 L 4
+Y Y R 2
+
+//q5
+4
+0 0 L 5
+1 1 L 5
+Y 1 L 5
+B B R 0
+
+//q6
+2
+1 B R 6
+0 B R 7
+
+//q7
+0
+
+
+
